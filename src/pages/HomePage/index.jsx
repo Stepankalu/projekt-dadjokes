@@ -7,7 +7,7 @@ const [users, setUsers] = useState([])
 
 useEffect(()=> {
   const results = async () => {
-    const response = await fetch('http://localhost:4000/api/user')
+    const response = await fetch('http://localhost:4000/api/jokes')
     const json = await response.json()
     setUsers(json.data)
   }
